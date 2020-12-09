@@ -13,11 +13,10 @@ class Triangle implements Shape {
 	@Override
 	public void calculateArea() {
 		area = 0.5 * (base * height);
-		System.out.println("Rectangle Area: " + area);
 	}
 	
 	public void display() {
-		
+		System.out.println("Triangle Area: " + area);
 	}
 	
 	public static void main(String[] args) {
@@ -25,5 +24,6 @@ class Triangle implements Shape {
 		
 		shape.input();
 		shape.calculateArea();
+		shape.display();
 	}
 }

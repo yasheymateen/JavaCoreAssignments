@@ -13,10 +13,10 @@ package com.ss.basics.assignment;
 	@Override
 	public void calculateArea() {
 		area = pi * (Math.pow(radius, 2));
-		System.out.println("Circle area: " + area);
 	}
 	
 	public void display() {
+		System.out.println("Circle area: " + area);
 	
 	}
 	
@@ -25,5 +25,6 @@ package com.ss.basics.assignment;
 		
 		shape.input();
 		shape.calculateArea();
+		shape.display();
 	}
 }

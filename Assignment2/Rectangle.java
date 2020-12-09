@@ -12,13 +12,16 @@ public class Rectangle extends Circle{
 	public void calculateArea() {
 		super.calculateArea();
 		area = length * width;
-		System.out.println("Rectangle Area: " + area);
 	}
 	
+	public void display(){
+		System.out.println("Rectangle Area: " + area);
+
 	public static void main(String[] args) {
 		Rectangle shape = new Rectangle();
 		
 		shape.input();
 		shape.calculateArea();
+		shape.display();
 	}
 }
